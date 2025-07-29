@@ -104,22 +104,21 @@ const CurriculumMap: React.FC<CurriculumMapProps> = ({ selectedCareerId = 'comp-
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground p-4 transition-colors">
+    <div className="min-h-screen bg-background text-foreground p-4 pt-16 sm:pt-4 transition-colors">
       {/* Theme Toggle */}
       <ThemeToggle />
       
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-8 text-center">
-          <h1 className="text-4xl font-bold mb-2 flex items-center justify-center gap-2">
-            <BookOpen className="w-8 h-8" />
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 pr-4 sm:pr-0">
             Malla Curricular TEC
           </h1>
           
           {/* Career Selector */}
-          <div className="mb-4 flex justify-center">
+          <div className="mb-4 flex justify-center px-4 sm:px-0">
             <Select value={currentCareerId} onValueChange={handleCareerChange}>
-              <SelectTrigger className="w-[350px]">
+              <SelectTrigger className="w-full max-w-[350px]">
                 <SelectValue placeholder="Selecciona una carrera" />
               </SelectTrigger>
               <SelectContent>
@@ -132,10 +131,10 @@ const CurriculumMap: React.FC<CurriculumMapProps> = ({ selectedCareerId = 'comp-
             </Select>
           </div>
           
-          <p className="text-lg text-muted-foreground mb-4">
+          <p className="text-base sm:text-lg text-muted-foreground mb-4 px-4 sm:px-0">
             {currentCareer.university}
           </p>
-          <div className="flex justify-center gap-4 text-sm mb-4">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-4 text-xs sm:text-sm mb-4 px-4 sm:px-0">
             <Badge variant="secondary">Total: {getTotalCredits(currentCareer)} créditos</Badge>
             <Badge variant="completed">Completados: {isClient ? getCompletedCredits(currentCareer, currentCareer.id) : 0} créditos</Badge>
             <Badge variant="credits">Progreso: {isClient ? Math.round((getCompletedCredits(currentCareer, currentCareer.id) / getTotalCredits(currentCareer)) * 100) : 0}%</Badge>
