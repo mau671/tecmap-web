@@ -1,0 +1,490 @@
+{
+  "id": "computer-eng-tec",
+  "name": "Ingeniería en Computadores",
+  "university": "TEC Costa Rica",
+  "blocks": [
+    {
+      "id": 0,
+      "name": "Bloque 0",
+      "subjects": [
+        {
+          "code": "CI0205",
+          "name": "PRUEBA AVANZADA INGLÉS",
+          "credits": 0,
+          "prerequisites": [],
+          "corequisites": []
+        },
+        {
+          "code": "MA0101",
+          "name": "MATEMÁTICA GENERAL",
+          "credits": 2,
+          "prerequisites": [],
+          "corequisites": []
+        }
+      ],
+      "totalCredits": 2
+    },
+    {
+      "id": 1,
+      "name": "Bloque 1",
+      "subjects": [
+        {
+          "code": "CE1101",
+          "name": "INTRODUCCIÓN A LA PROGRAMACIÓN",
+          "credits": 3,
+          "prerequisites": [],
+          "corequisites": []
+        },
+        {
+          "code": "CE1104",
+          "name": "FUNDAMENTOS DE SISTEMAS COMPUTACIONALES",
+          "credits": 3,
+          "prerequisites": [],
+          "corequisites": ["CE1101"]
+        },
+        {
+          "code": "MA1102",
+          "name": "CÁLCULO DIFERENCIAL E INTEGRAL",
+          "credits": 4,
+          "prerequisites": ["MA0101"],
+          "corequisites": []
+        },
+        {
+          "code": "MA1403",
+          "name": "MATEMÁTICA DISCRETA",
+          "credits": 4,
+          "prerequisites": [],
+          "corequisites": []
+        },
+        {
+          "code": "QU1102",
+          "name": "LABORATORIO DE QUÍMICA BÁSICA I",
+          "credits": 1,
+          "prerequisites": [],
+          "corequisites": ["QU1106"]
+        },
+        {
+          "code": "QU1106",
+          "name": "QUÍMICA BÁSICA I",
+          "credits": 3,
+          "prerequisites": [],
+          "corequisites": ["QU1102"]
+        },
+        {
+          "code": "SE1100",
+          "name": "ACTIVIDAD CULTURAL I",
+          "credits": 0,
+          "prerequisites": [],
+          "corequisites": []
+        },
+        {
+          "code": "SE1200",
+          "name": "ACTIVIDAD DEPORTIVA I",
+          "credits": 0,
+          "prerequisites": [],
+          "corequisites": []
+        }
+      ],
+      "totalCredits": 18
+    },
+    {
+      "id": 2,
+      "name": "Bloque 2",
+      "subjects": [
+        {
+          "code": "CE1103",
+          "name": "ALGORITMOS Y ESTRUCTURAS DE DATOS I",
+          "credits": 4,
+          "prerequisites": ["CE1101", "CE1104", "MA1403"],
+          "corequisites": []
+        },
+        {
+          "code": "CE1105",
+          "name": "PRINCIPIOS DE MODELADO EN INGENIERÍA",
+          "credits": 3,
+          "prerequisites": ["CE1104"],
+          "corequisites": []
+        },
+        {
+          "code": "CI1403",
+          "name": "COMUNICACIÓN TÉCNICA",
+          "credits": 2,
+          "prerequisites": [],
+          "corequisites": ["CS1502"]
+        },
+        {
+          "code": "CS1502",
+          "name": "INTRODUCCIÓN A LA TÉCNICA CIENCIA Y TECNOLOGÍA",
+          "credits": 1,
+          "prerequisites": [],
+          "corequisites": []
+        },
+        {
+          "code": "FI1101",
+          "name": "FÍSICA GENERAL I",
+          "credits": 3,
+          "prerequisites": ["MA1102"],
+          "corequisites": []
+        },
+        {
+          "code": "FI1201",
+          "name": "LABORATORIO FÍSICA GENERAL I",
+          "credits": 1,
+          "prerequisites": [],
+          "corequisites": ["FI1101"]
+        },
+        {
+          "code": "MA1103",
+          "name": "CÁLCULO Y ÁLGEBRA LINEAL",
+          "credits": 4,
+          "prerequisites": ["MA1102"],
+          "corequisites": []
+        },
+        {
+          "code": "SE1400",
+          "name": "ACTIVIDAD CULTURAL-DEPORTIVA",
+          "credits": 0,
+          "prerequisites": [],
+          "corequisites": []
+        }
+      ],
+      "totalCredits": 18
+    },
+    {
+      "id": 3,
+      "name": "Bloque 3",
+      "subjects": [
+        {
+          "code": "CE2103",
+          "name": "ALGORITMOS Y ESTRUCTURAS DE DATOS II",
+          "credits": 4,
+          "prerequisites": ["CE1103", "CE1105"],
+          "corequisites": []
+        },
+        {
+          "code": "CS2101",
+          "name": "AMBIENTE HUMANO",
+          "credits": 2,
+          "prerequisites": ["CI1403"],
+          "corequisites": []
+        },
+        {
+          "code": "EL2113",
+          "name": "CIRCUITOS ELÉCTRICOS EN CORRIENTE CONTINUA",
+          "credits": 4,
+          "prerequisites": ["FI1101", "MA1102"],
+          "corequisites": []
+        },
+        {
+          "code": "FH1000",
+          "name": "CENTROS DE FORMACIÓN HUMANÍSTICA",
+          "credits": 0,
+          "prerequisites": [],
+          "corequisites": []
+        },
+        {
+          "code": "FI1102",
+          "name": "FÍSICA GENERAL II",
+          "credits": 3,
+          "prerequisites": ["FI1101"],
+          "corequisites": ["MA1102"]
+        },
+        {
+          "code": "FI1202",
+          "name": "LABORATORIO FÍSICA GENERAL II",
+          "credits": 1,
+          "prerequisites": ["FI1201"],
+          "corequisites": ["FI1102"]
+        },
+        {
+          "code": "MA2104",
+          "name": "CÁLCULO SUPERIOR",
+          "credits": 4,
+          "prerequisites": ["MA1103"],
+          "corequisites": []
+        }
+      ],
+      "totalCredits": 18
+    },
+    {
+      "id": 4,
+      "name": "Bloque 4",
+      "subjects": [
+        {
+          "code": "CE1106",
+          "name": "PARADIGMAS DE PROGRAMACIÓN",
+          "credits": 3,
+          "prerequisites": ["CE2103"],
+          "corequisites": []
+        },
+        {
+          "code": "CE2201",
+          "name": "LABORATORIO DE CIRCUITOS ELÉCTRICOS",
+          "credits": 1,
+          "prerequisites": ["FI1202"],
+          "corequisites": []
+        },
+        {
+          "code": "EL2114",
+          "name": "CIRCUITOS ELÉCTRICOS EN CORRIENTE ALTERNA",
+          "credits": 4,
+          "prerequisites": ["EL2113"],
+          "corequisites": ["EL2207"]
+        },
+        {
+          "code": "EL2207",
+          "name": "ELEMENTOS ACTIVOS",
+          "credits": 4,
+          "prerequisites": ["EL2113"],
+          "corequisites": []
+        },
+        {
+          "code": "PI2609",
+          "name": "PROBABILIDAD Y ESTADÍSTICA",
+          "credits": 2,
+          "prerequisites": ["MA2104"],
+          "corequisites": []
+        },
+        {
+          "code": "SO4604",
+          "name": "SEGURIDAD Y SALUD OCUPACIONAL",
+          "credits": 3,
+          "prerequisites": ["FI1102"],
+          "corequisites": []
+        }
+      ],
+      "totalCredits": 17
+    },
+    {
+      "id": 5,
+      "name": "Bloque 5",
+      "subjects": [
+        {
+          "code": "CE1107",
+          "name": "FUNDAMENTOS DE ARQUITECTURA DE COMPUTADORES",
+          "credits": 4,
+          "prerequisites": ["EL2207"],
+          "corequisites": []
+        },
+        {
+          "code": "CE3101",
+          "name": "BASES DE DATOS",
+          "credits": 4,
+          "prerequisites": ["CE1106"],
+          "corequisites": []
+        },
+        {
+          "code": "CE3201",
+          "name": "TALLER DE DISEÑO DIGITAL",
+          "credits": 2,
+          "prerequisites": ["CE2201"],
+          "corequisites": ["CE1107"]
+        },
+        {
+          "code": "MA2105",
+          "name": "ECUACIONES DIFERENCIALES",
+          "credits": 4,
+          "prerequisites": ["MA1103"],
+          "corequisites": []
+        },
+        {
+          "code": "PI5516",
+          "name": "INGENIERÍA ECONÓMICA",
+          "credits": 3,
+          "prerequisites": ["PI2609"],
+          "corequisites": []
+        }
+      ],
+      "totalCredits": 17
+    },
+    {
+      "id": 6,
+      "name": "Bloque 6",
+      "subjects": [
+        {
+          "code": "CE1108",
+          "name": "COMPILADORES E INTÉRPRETES",
+          "credits": 4,
+          "prerequisites": ["CE1107"],
+          "corequisites": ["CE4301"]
+        },
+        {
+          "code": "CE1109",
+          "name": "CIRCUITOS ANALÓGICOS",
+          "credits": 4,
+          "prerequisites": ["EL2207", "SO4604"],
+          "corequisites": []
+        },
+        {
+          "code": "CE1110",
+          "name": "ANÁLISIS DE SEÑALES MIXTAS",
+          "credits": 4,
+          "prerequisites": ["EL2114", "MA2105"],
+          "corequisites": []
+        },
+        {
+          "code": "CE4301",
+          "name": "ARQUITECTURA DE COMPUTADORES I",
+          "credits": 4,
+          "prerequisites": ["CE1107", "CE3201"],
+          "corequisites": []
+        },
+        {
+          "code": "CI3203",
+          "name": "INGLÉS ESPECIALIZADO PARA INGENIERÍAS EN COMPUTADORES",
+          "credits": 2,
+          "prerequisites": ["CI0205"],
+          "corequisites": []
+        }
+      ],
+      "totalCredits": 18
+    },
+    {
+      "id": 7,
+      "name": "Bloque 7",
+      "subjects": [
+        {
+          "code": "CE1111",
+          "name": "ANÁLISIS NUMÉRICO PARA LA INGENIERÍA",
+          "credits": 3,
+          "prerequisites": ["MA2105"],
+          "corequisites": []
+        },
+        {
+          "code": "CE1112",
+          "name": "TALLER DE SEÑALES MIXTAS",
+          "credits": 3,
+          "prerequisites": ["CE1109", "CE1110"],
+          "corequisites": []
+        },
+        {
+          "code": "CE1116",
+          "name": "DISEÑO Y CALIDAD EN PRODUCTOS TECNOLÓGICOS",
+          "credits": 4,
+          "prerequisites": ["CE3101", "CE4301", "PI5516"],
+          "corequisites": []
+        },
+        {
+          "code": "CE4302",
+          "name": "ARQUITECTURA DE COMPUTADORES II",
+          "credits": 4,
+          "prerequisites": ["CE4301"],
+          "corequisites": ["CE4303"]
+        },
+        {
+          "code": "CE4303",
+          "name": "PRINCIPIOS DE SISTEMAS OPERATIVOS",
+          "credits": 4,
+          "prerequisites": ["CE1108"],
+          "corequisites": []
+        }
+      ],
+      "totalCredits": 18
+    },
+    {
+      "id": 8,
+      "name": "Bloque 8",
+      "subjects": [
+        {
+          "code": "AE4208",
+          "name": "DESARROLLO DE EMPRENDEDORES",
+          "credits": 4,
+          "prerequisites": ["CS2101"],
+          "corequisites": []
+        },
+        {
+          "code": "CE1113",
+          "name": "SISTEMAS EMPOTRADOS",
+          "credits": 3,
+          "prerequisites": ["CE4303"],
+          "corequisites": []
+        },
+        {
+          "code": "CE5301",
+          "name": "REDES DE COMPUTADORES",
+          "credits": 4,
+          "prerequisites": ["CE1116", "CE4303"],
+          "corequisites": []
+        },
+        {
+          "code": "CE5701",
+          "name": "ELECTIVA I",
+          "credits": 3,
+          "prerequisites": ["CE4302", "CI3203"],
+          "corequisites": []
+        },
+        {
+          "code": "CS3404",
+          "name": "SEMINARIO DE ÉTICA PARA LA INGENIERÍA",
+          "credits": 2,
+          "prerequisites": ["CS2101"],
+          "corequisites": []
+        }
+      ],
+      "totalCredits": 16
+    },
+    {
+      "id": 9,
+      "name": "Bloque 9",
+      "subjects": [
+        {
+          "code": "CE1114",
+          "name": "PROYECTO DE APLICACIÓN DE LA INGENIERÍA EN COMPUTADORES",
+          "credits": 4,
+          "prerequisites": ["AE4208", "CE1112", "CE1113"],
+          "corequisites": []
+        },
+        {
+          "code": "CE1115",
+          "name": "SEGURIDAD DE LA INFORMACIÓN",
+          "credits": 3,
+          "prerequisites": ["CE5301"],
+          "corequisites": []
+        },
+        {
+          "code": "CE1117",
+          "name": "FORMULACIÓN Y GESTIÓN DE PROYECTOS",
+          "credits": 3,
+          "prerequisites": ["CE5301"],
+          "corequisites": ["CE1114"]
+        },
+        {
+          "code": "CE5801",
+          "name": "ELECTIVA II",
+          "credits": 3,
+          "prerequisites": ["CE5701"],
+          "corequisites": []
+        },
+        {
+          "code": "CE5901",
+          "name": "ELECTIVA III",
+          "credits": 3,
+          "prerequisites": ["CE5701"],
+          "corequisites": []
+        },
+        {
+          "code": "CS4402",
+          "name": "SEMINARIO DE ESTUDIOS COSTARRICENSES",
+          "credits": 2,
+          "prerequisites": ["CS3404"],
+          "corequisites": []
+        }
+      ],
+      "totalCredits": 18
+    },
+    {
+      "id": 10,
+      "name": "Bloque 10",
+      "subjects": [
+        {
+          "code": "CE5601",
+          "name": "TRABAJO FINAL DE GRADUACIÓN",
+          "credits": 12,
+          "prerequisites": ["CE1111", "CE1114", "CE1115", "CE1117", "CE5801", "CE5901", "CS4402"],
+          "corequisites": []
+        }
+      ],
+      "totalCredits": 12
+    }
+  ]
+}

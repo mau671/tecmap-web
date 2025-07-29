@@ -11,6 +11,12 @@
       "name": "Licenciatura en Administración de Tecnologías de Información",
       "university": "Tecnológico de Costa Rica",
       "dataFile": "administration-information-technologies-tec.json"
+    },
+    {
+      "id": "computer-eng-tec",
+      "name": "Ingeniería en Computadores",
+      "university": "Tecnológico de Costa Rica",
+      "dataFile": "computer-engineering-tec.json"
     }
   ]
 }

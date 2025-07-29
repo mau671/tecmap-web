@@ -58,15 +58,18 @@ export interface UserProgress {
 import careerIndexData from '@/data/careers/index.json';
 import computingEngineeringData from '@/data/careers/computing-engineering-tec.json';
 import adminTechnologiesData from '@/data/careers/administration-information-technologies-tec.json';
+import computerEngineeringData from '@/data/careers/computer-engineering-tec.json';
 
 // Datos estáticos de las carreras
 export const computingEngineeringCareer: Career = computingEngineeringData as Career;
 export const adminTechnologiesCareer: Career = adminTechnologiesData as Career;
+export const computerEngineeringCareer: Career = computerEngineeringData as Career;
 
 // Lista de carreras disponibles
 export const availableCareers: Career[] = [
   computingEngineeringCareer,
   adminTechnologiesCareer,
+  computerEngineeringCareer,
 ];
 
 // Función para obtener una carrera por ID
@@ -76,7 +79,11 @@ export function getCareerById(careerId: string): Career | undefined {
 
 // Función para obtener la lista de carreras desde el índice
 export function getAvailableCareers(): Array<{id: string, name: string, university: string}> {
-  return careerIndexData.availableCareers;
+  return availableCareers.map(career => ({
+    id: career.id,
+    name: career.name,
+    university: career.university
+  }));
 }
 
 // Funciones helper para manejar datos de carreras
