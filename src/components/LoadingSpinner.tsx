@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, Loader2 } from 'lucide-react';
+import { BookOpen } from 'lucide-react';
 
 interface LoadingSpinnerProps {
   message?: string;
@@ -11,10 +11,9 @@ const LoadingSpinner: React.FC<LoadingSpinnerProps> = ({
   return (
     <div className="min-h-screen bg-background flex items-center justify-center">
       <div className="flex flex-col items-center gap-4 p-8">
-        {/* Animated icon container */}
+        {/* Animated book icon */}
         <div className="relative">
           <BookOpen className="w-12 h-12 text-primary animate-pulse" />
-          <Loader2 className="w-6 h-6 text-primary/60 animate-spin absolute -top-1 -right-1" />
         </div>
         
         {/* Loading text */}
