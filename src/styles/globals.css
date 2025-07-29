@@ -6,7 +6,7 @@
   --foreground: 222.2 84% 4.9%;
   --card: 0 0% 100%;
   --card-foreground: 222.2 84% 4.9%;
-  --popover: 0 0% 100%;
+  --popover: 0 0% 98%;
   --popover-foreground: 222.2 84% 4.9%;
   --primary: 221.2 83.2% 53.3%;
   --primary-foreground: 210 40% 98%;
@@ -14,7 +14,7 @@
   --secondary-foreground: 222.2 84% 4.9%;
   --muted: 210 40% 96%;
   --muted-foreground: 215.4 16.3% 46.9%;
-  --accent: 210 40% 96%;
+  --accent: 210 40% 94%;
   --accent-foreground: 222.2 84% 4.9%;
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 210 40% 98%;
@@ -22,6 +22,20 @@
   --input: 214.3 31.8% 91.4%;
   --ring: 221.2 83.2% 53.3%;
   --radius: 0.5rem;
+  
+  /* Badge colors for light theme */
+  --badge-completed-bg: 158 64% 52% / 0.1;
+  --badge-completed-text: 158 64% 32%;
+  --badge-in-progress-bg: 43 96% 56% / 0.1;
+  --badge-in-progress-text: 43 96% 36%;
+  --badge-credits-bg: 221 83% 53% / 0.1;
+  --badge-credits-text: 221 83% 43%;
+  
+  /* Course card background colors for light theme */
+  --course-completed-bg: 158 64% 52% / 0.05;
+  --course-completed-border: 158 64% 52% / 0.3;
+  --course-in-progress-bg: 43 96% 56% / 0.05;
+  --course-in-progress-border: 43 96% 56% / 0.3;
 }
 
 .dark {
@@ -29,7 +43,7 @@
   --foreground: 210 40% 98%;
   --card: 222.2 84% 4.9%;
   --card-foreground: 210 40% 98%;
-  --popover: 222.2 84% 4.9%;
+  --popover: 217.2 32.6% 17.5%;
   --popover-foreground: 210 40% 98%;
   --primary: 217.2 91.2% 59.8%;
   --primary-foreground: 222.2 84% 4.9%;
@@ -37,13 +51,27 @@
   --secondary-foreground: 210 40% 98%;
   --muted: 217.2 32.6% 17.5%;
   --muted-foreground: 215 20.2% 65.1%;
-  --accent: 217.2 32.6% 17.5%;
+  --accent: 217.2 32.6% 20%;
   --accent-foreground: 210 40% 98%;
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 210 40% 98%;
   --border: 217.2 32.6% 17.5%;
   --input: 217.2 32.6% 17.5%;
   --ring: 224.3 76.3% 94.1%;
+  
+  /* Badge colors for dark theme */
+  --badge-completed-bg: 158 64% 52% / 0.2;
+  --badge-completed-text: 158 64% 62%;
+  --badge-in-progress-bg: 43 96% 56% / 0.2;
+  --badge-in-progress-text: 43 96% 66%;
+  --badge-credits-bg: 221 83% 53% / 0.2;
+  --badge-credits-text: 221 83% 63%;
+  
+  /* Course card background colors for dark theme */
+  --course-completed-bg: 158 64% 52% / 0.15;
+  --course-completed-border: 158 64% 52% / 0.3;
+  --course-in-progress-bg: 43 96% 56% / 0.15;
+  --course-in-progress-border: 43 96% 56% / 0.3;
 }
 
 * {
@@ -54,4 +82,67 @@ body {
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Smooth theme transitions for all elements */
+*,
+*::before,
+*::after {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+/* Badge specific transitions */
+.inline-flex {
+  transition: all 0.2s ease;
+}
+
+/* Ensure proper backdrop for select content */
+[data-radix-popper-content-wrapper] {
+  z-index: 50 !important;
+}
+
+/* Additional theme transition for radix components */
+[data-radix-select-content],
+[data-radix-select-item],
+[data-radix-select-trigger] {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease !important;
+}
+
+/* Custom scrollbar for better aesthetics */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary));
+}
+
+/* Custom loading animation */
+@keyframes loading-bar {
+  0% {
+    width: 0%;
+    margin-left: 0%;
+  }
+  50% {
+    width: 75%;
+    margin-left: 5%;
+  }
+  100% {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+
+.loading-bar {
+  animation: loading-bar 2s ease-in-out infinite;
 }

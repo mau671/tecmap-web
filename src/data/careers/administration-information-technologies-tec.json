@@ -1,0 +1,447 @@
+{
+  "id": "admin-ti-tec",
+  "name": "Licenciatura en Administración de Tecnologías de Información",
+  "university": "Tecnológico de Costa Rica",
+  "blocks": [
+    {
+      "id": 0,
+      "name": "Bloque 0",
+      "totalCredits": 4,
+      "subjects": [
+        {
+          "code": "CI0200",
+          "name": "EXAMEN DIAGNÓSTICO",
+          "credits": 0
+        },
+        {
+          "code": "CI0202",
+          "name": "INGLÉS BÁSICO",
+          "credits": 2
+        },
+        {
+          "code": "MA0101",
+          "name": "MATEMÁTICA GENERAL",
+          "credits": 2
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Bloque 1",
+      "totalCredits": 15,
+      "subjects": [
+        {
+          "code": "CI1106",
+          "name": "COMUNICACIÓN ESCRITA",
+          "credits": 2
+        },
+        {
+          "code": "MA1403",
+          "name": "MATEMÁTICA DISCRETA",
+          "credits": 4
+        },
+        {
+          "code": "SE1100",
+          "name": "ACTIVIDAD CULTURAL I",
+          "credits": 0
+        },
+        {
+          "code": "TI1102",
+          "name": "INFORMACIÓN CONTABLE",
+          "credits": 3
+        },
+        {
+          "code": "TI1103",
+          "name": "MODELOS ORGANIZACIONALES Y GESTIÓN DE TI",
+          "credits": 3
+        },
+        {
+          "code": "TI1400",
+          "name": "INTRODUCCIÓN A LA PROGRAMACIÓN",
+          "credits": 3
+        },
+        {
+          "code": "TI1401",
+          "name": "TALLER DE PROGRAMACIÓN",
+          "credits": 3,
+          "corequisites": ["TI1400"]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Bloque 2",
+      "totalCredits": 18,
+      "subjects": [
+        {
+          "code": "CI1107",
+          "name": "COMUNICACIÓN ORAL",
+          "credits": 1
+        },
+        {
+          "code": "FH1000",
+          "name": "CENTROS DE FORMACIÓN HUMANÍSTICA",
+          "credits": 0
+        },
+        {
+          "code": "MA1102",
+          "name": "CÁLCULO DIFERENCIAL E INTEGRAL",
+          "credits": 4,
+          "prerequisites": ["MA0101", "MA1403"]
+        },
+        {
+          "code": "SE1200",
+          "name": "ACTIVIDAD DEPORTIVA I",
+          "credits": 0
+        },
+        {
+          "code": "TI1201",
+          "name": "COMPORTAMIENTO ORGANIZACIONAL Y TALENTO HUMANO",
+          "credits": 3,
+          "prerequisites": ["TI1103"]
+        },
+        {
+          "code": "TI2402",
+          "name": "ALGORITMOS Y ESTRUCTURAS DE DATOS",
+          "credits": 4,
+          "prerequisites": ["TI1400", "TI1401"]
+        },
+        {
+          "code": "TI2404",
+          "name": "ORGANIZACIÓN Y ARQUITECTURA DE COMPUTADORAS",
+          "credits": 3,
+          "prerequisites": ["TI1401"]
+        },
+        {
+          "code": "TI4500",
+          "name": "INGENIERÍA DE REQUERIMIENTOS",
+          "credits": 3,
+          "prerequisites": ["TI1400"]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Bloque 3",
+      "totalCredits": 18,
+      "subjects": [
+        {
+          "code": "CI3400",
+          "name": "INGLÉS I (ATI)",
+          "credits": 2,
+          "prerequisites": ["CI0200", "CI0202"]
+        },
+        {
+          "code": "MA1103",
+          "name": "CÁLCULO Y ÁLGEBRA LINEAL",
+          "credits": 4,
+          "prerequisites": ["MA1102"]
+        },
+        {
+          "code": "SE1400",
+          "name": "ACTIVIDAD CULTURAL-DEPORTIVA",
+          "credits": 0
+        },
+        {
+          "code": "TI2800",
+          "name": "ADMINISTRACIÓN DE PROYECTOS I",
+          "credits": 3,
+          "prerequisites": ["TI4500"]
+        },
+        {
+          "code": "TI3103",
+          "name": "COSTOS EN AMBIENTES INFORMÁTICOS",
+          "credits": 3,
+          "prerequisites": ["TI1102"]
+        },
+        {
+          "code": "TI3600",
+          "name": "BASES DE DATOS",
+          "credits": 3,
+          "prerequisites": ["MA1403", "TI2402"]
+        },
+        {
+          "code": "TI4200",
+          "name": "ECONOMÍA",
+          "credits": 3,
+          "prerequisites": ["MA1102"]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Bloque 4",
+      "totalCredits": 17,
+      "subjects": [
+        {
+          "code": "CI4401",
+          "name": "INGLÉS II (ATI)",
+          "credits": 2,
+          "prerequisites": ["CI3400"]
+        },
+        {
+          "code": "MA2404",
+          "name": "PROBABILIDADES",
+          "credits": 4,
+          "prerequisites": ["MA1103"]
+        },
+        {
+          "code": "TI2201",
+          "name": "PROGRAMACIÓN ORIENTADA A OBJETOS",
+          "credits": 3,
+          "prerequisites": ["TI3600"]
+        },
+        {
+          "code": "TI3801",
+          "name": "ADMINISTRACIÓN DE PROYECTOS II",
+          "credits": 3,
+          "prerequisites": ["TI2800"]
+        },
+        {
+          "code": "TI4101",
+          "name": "PLANIFICACIÓN Y PRESUPUESTO",
+          "credits": 2,
+          "prerequisites": ["TI3103"]
+        },
+        {
+          "code": "TI4601",
+          "name": "BASES DE DATOS AVANZADOS",
+          "credits": 4,
+          "prerequisites": ["TI3600"]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Bloque 5",
+      "totalCredits": 17,
+      "subjects": [
+        {
+          "code": "CS3404",
+          "name": "SEMINARIO DE ÉTICA PARA LA INGENIERÍA",
+          "credits": 2,
+          "prerequisites": ["TI3801"]
+        },
+        {
+          "code": "MA3405",
+          "name": "ESTADÍSTICA",
+          "credits": 4,
+          "prerequisites": ["MA2404"]
+        },
+        {
+          "code": "TI3500",
+          "name": "MERCADEO EN LA ERA DIGITAL",
+          "credits": 3,
+          "prerequisites": ["MA2404"]
+        },
+        {
+          "code": "TI3501",
+          "name": "FUNDAMENTOS DE SISTEMAS OPERATIVOS",
+          "credits": 3,
+          "prerequisites": ["TI2201", "TI2404"]
+        },
+        {
+          "code": "TI5100",
+          "name": "GESTIÓN Y TOMA DE DECISIONES FINANCIERAS",
+          "credits": 3,
+          "prerequisites": ["TI4101", "TI4200"]
+        },
+        {
+          "code": "TI5501",
+          "name": "DISEÑO DE SOFTWARE",
+          "credits": 3,
+          "prerequisites": ["TI2201", "TI4500"]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Bloque 6",
+      "totalCredits": 18,
+      "subjects": [
+        {
+          "code": "CS2304",
+          "name": "DERECHO LABORAL",
+          "credits": 2,
+          "prerequisites": ["CS3404"]
+        },
+        {
+          "code": "TI3601",
+          "name": "MODELO DE TOMA DE DECISIONES",
+          "credits": 2,
+          "prerequisites": ["MA3405", "TI5100"]
+        },
+        {
+          "code": "TI3602",
+          "name": "PRODUCCIÓN, LOGÍSTICA Y CALIDAD",
+          "credits": 2,
+          "prerequisites": ["MA3405", "TI5100"]
+        },
+        {
+          "code": "TI3603",
+          "name": "CALIDAD EN SISTEMAS DE INFORMACIÓN",
+          "credits": 3,
+          "prerequisites": ["TI3801", "TI5501"]
+        },
+        {
+          "code": "TI3604",
+          "name": "FUNDAMENTOS DE REDES",
+          "credits": 3,
+          "prerequisites": ["TI3501"]
+        },
+        {
+          "code": "TI6900",
+          "name": "INTELIGENCIA DE NEGOCIOS",
+          "credits": 3,
+          "prerequisites": ["TI4601"]
+        },
+        {
+          "code": "TI9003",
+          "name": "COMPUTACIÓN Y SOCIEDAD",
+          "credits": 2,
+          "prerequisites": ["CS3404", "TI1201"]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Bloque 7",
+      "totalCredits": 18,
+      "subjects": [
+        {
+          "code": "CS3405",
+          "name": "DERECHO INFORMÁTICO Y MERCANTIL",
+          "credits": 3,
+          "prerequisites": ["TI1201"]
+        },
+        {
+          "code": "TI4701",
+          "name": "SEGURIDAD EN SISTEMAS DE INFORMACIÓN",
+          "credits": 3,
+          "prerequisites": ["TI3604"]
+        },
+        {
+          "code": "TI5000",
+          "name": "ELECTIVA 1",
+          "credits": 3
+        },
+        {
+          "code": "TI7503",
+          "name": "ARQUITECTURA DE APLICACIONES",
+          "credits": 3,
+          "prerequisites": ["TI3604", "TI5501"]
+        },
+        {
+          "code": "TI7901",
+          "name": "NEGOCIOS ELECTRÓNICOS",
+          "credits": 3,
+          "prerequisites": ["TI3603", "TI6900"]
+        },
+        {
+          "code": "TI8109",
+          "name": "FORMULACIÓN Y EVALUACIÓN DE PROYECTOS DE TI",
+          "credits": 3,
+          "prerequisites": ["TI3500", "TI3601"]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Bloque 8",
+      "totalCredits": 18,
+      "subjects": [
+        {
+          "code": "TI6000",
+          "name": "ELECTIVA 2",
+          "credits": 3
+        },
+        {
+          "code": "TI8902",
+          "name": "ADQUISICIÓN DE TI",
+          "credits": 3,
+          "prerequisites": ["TI7503", "TI8109"]
+        },
+        {
+          "code": "TI8904",
+          "name": "ADMINISTRACIÓN DE PROCESOS DE NEGOCIOS",
+          "credits": 3,
+          "prerequisites": ["TI7503"]
+        },
+        {
+          "code": "TI8905",
+          "name": "ADMINISTRACIÓN DE SERVICIOS DE TECNOLOGÍAS DE INFORMACIÓN I",
+          "credits": 3,
+          "prerequisites": ["TI4701", "TI7901"]
+        },
+        {
+          "code": "TI9805",
+          "name": "AUDITORÍA DE TI",
+          "credits": 3,
+          "prerequisites": ["TI4701"]
+        },
+        {
+          "code": "TI9905",
+          "name": "SISTEMAS DE INFORMACIÓN EMPRESARIAL",
+          "credits": 3,
+          "prerequisites": ["TI7901"]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Bloque 9",
+      "totalCredits": 18,
+      "subjects": [
+        {
+          "code": "TI5901",
+          "name": "ESPÍRITU EMPRENDEDOR Y CREACIÓN DE EMPRESAS",
+          "credits": 3,
+          "prerequisites": ["TI8109"]
+        },
+        {
+          "code": "TI5902",
+          "name": "ANALÍTICA EMPRESARIAL",
+          "credits": 3,
+          "prerequisites": ["TI9905"]
+        },
+        {
+          "code": "TI5903",
+          "name": "PLANIFICACIÓN ESTRATÉGICA DE TECNOLOGÍA DE INFORMACIÓN",
+          "credits": 3,
+          "prerequisites": ["TI8902"]
+        },
+        {
+          "code": "TI5904",
+          "name": "INVESTIGACIÓN EN SISTEMAS DE INFORMACIÓN",
+          "credits": 3,
+          "prerequisites": ["TI8904", "TI9905"]
+        },
+        {
+          "code": "TI5905",
+          "name": "FUNDAMENTOS DE ARQUITECTURA EMPRESARIAL",
+          "credits": 3,
+          "prerequisites": ["TI8904"]
+        },
+        {
+          "code": "TI9004",
+          "name": "ADMINISTRACIÓN DE SERVICIOS DE TECNOLOGÍAS DE INFORMACIÓN II",
+          "credits": 3,
+          "prerequisites": ["TI8905"]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Bloque 10",
+      "totalCredits": 10,
+      "subjects": [
+        {
+          "code": "TI9000",
+          "name": "TRABAJO FINAL DE GRADUACIÓN",
+          "credits": 10,
+          "prerequisites": ["TI5901", "TI5902", "TI5903", "TI5904", "TI5905", "TI9004"]
+        }
+      ]
+    }
+  ]
+}

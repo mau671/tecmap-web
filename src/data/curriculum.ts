@@ -57,15 +57,27 @@ export interface UserProgress {
 // Carga de datos desde archivos JSON
 import careerIndexData from '@/data/careers/index.json';
 import computingEngineeringData from '@/data/careers/computing-engineering-tec.json';
+import adminTechnologiesData from '@/data/careers/administration-information-technologies-tec.json';
 
-// Datos estáticos de la carrera - Ingeniería en Computación TEC
+// Datos estáticos de las carreras
 export const computingEngineeringCareer: Career = computingEngineeringData as Career;
+export const adminTechnologiesCareer: Career = adminTechnologiesData as Career;
 
-// Lista de carreras disponibles (preparado para futuras expansiones)
+// Lista de carreras disponibles
 export const availableCareers: Career[] = [
   computingEngineeringCareer,
-  // Aquí se pueden agregar más carreras cargando otros archivos JSON
+  adminTechnologiesCareer,
 ];
+
+// Función para obtener una carrera por ID
+export function getCareerById(careerId: string): Career | undefined {
+  return availableCareers.find(career => career.id === careerId);
+}
+
+// Función para obtener la lista de carreras desde el índice
+export function getAvailableCareers(): Array<{id: string, name: string, university: string}> {
+  return careerIndexData.availableCareers;
+}
 
 // Funciones helper para manejar datos de carreras
 export const getTotalCredits = (career: Career): number => {

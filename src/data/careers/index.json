@@ -5,6 +5,12 @@
       "name": "Ingeniería en Computación",
       "university": "Tecnológico de Costa Rica",
       "dataFile": "computing-engineering-tec.json"
+    },
+    {
+      "id": "admin-ti-tec",
+      "name": "Licenciatura en Administración de Tecnologías de Información",
+      "university": "Tecnológico de Costa Rica",
+      "dataFile": "administration-information-technologies-tec.json"
     }
   ]
 }
